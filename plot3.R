@@ -1,5 +1,6 @@
 library(data.table)
 library(dplyr)
+Sys.setlocale("LC_ALL","English")
 downloadfile <- "~/data/household_power_consumption.txt"
 if (!file.exists(downloadfile))
 { ifelse(!dir.exists("~/data"),dir.create("~/data"),FALSE)
